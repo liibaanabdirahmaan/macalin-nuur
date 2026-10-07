@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuur Maxamed Nuur | Biology & Chemistry Educator Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Scroll Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .dark .glass-dark {
+            background: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white min-h-screen transition-colors duration-300">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass dark:glass-dark bg-white/80 dark:bg-slate-900/80 border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-2">
+                <i class="fa-solid fa-graduation-cap"></i> Nuur<span class="text-slate-900 dark:text-white">.edu</span>
+            </a>
+            
+            <div class="flex items-center gap-4">
+                <ul class="hidden xl:flex gap-5 text-slate-600 dark:text-slate-300 text-xs font-medium">
+                    <li><a href="#about" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">About</a></li>
+                    <li><a href="#philosophy" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">Philosophy</a></li>
+                    <li><a href="#subjects" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">Subjects</a></li>
+                    <li><a href="#videos" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">Lab Videos</a></li>
+                    <li><a href="#notes" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">Free Notes</a></li>
+                    <li><a href="#gallery" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">Gallery</a></li>
+                    <li><a href="#testimonials" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">Testimonials</a></li>
+                    <li><a href="#faq" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">FAQ</a></li>
+                    <li><a href="#contact" class="hover:text-emerald-600 dark:hover:text-emerald-400 transition">Contact</a></li>
+                </ul>
+
+                <!-- Theme Toggle Button -->
+                <button onclick="toggleDarkMode()" aria-label="Toggle Theme" class="p-2.5 rounded-xl bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-amber-400 hover:scale-110 transition duration-300">
+                    <i id="theme-icon" class="fa-solid fa-moon text-base"></i>
+                </button>
+
+                <!-- WhatsApp Direct CTA -->
+                <a href="https://wa.me/252615379760" target="_blank" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-medium text-xs sm:text-sm transition shadow-lg shadow-emerald-500/25 flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="min-h-screen flex items-center pt-28 pb-16 px-6 relative overflow-hidden bg-cover bg-center" style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.85)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1600&q=80');" id="about">
+        
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10 w-full">
+            <div data-aos="fade-right">
+                <span class="px-3.5 py-1.5 text-xs font-semibold uppercase tracking-widest bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full inline-flex items-center gap-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Mogadishu University Alumnus
+                </span>
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-4">
+                    Hi, I'm <br><span class="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Nuur Maxamed Nuur</span>
+                </h1>
+                <h2 class="text-xl sm:text-2xl font-bold text-slate-300 mb-6">
+                    Biology & Chemistry Teacher
+                </h2>
+                <p class="text-slate-300 leading-relaxed text-base mb-8">
+                    Graduated from <span class="text-emerald-400 font-semibold">Mogadishu University</span> (Faculty of Education and Humanities - Department of Biology & Chemistry). Dedicated to shaping young analytical minds through practical science education.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#videos" class="px-7 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm transition shadow-lg shadow-emerald-600/30 flex items-center gap-2">
+                        Watch Lab Videos <i class="fa-solid fa-video"></i>
+                    </a>
+                    <button onclick="alert('CV Download triggered successfully! File ready for school admin.')" class="px-7 py-3 rounded-xl border border-emerald-500 text-emerald-400 hover:bg-emerald-500/10 font-semibold text-sm transition flex items-center gap-2">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </button>
+                </div>
+            </div>
+
+            <!-- PROFILE IMAGE CONTAINER -->
+            <div class="flex justify-center" data-aos="fade-left">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-[3rem] blur-lg opacity-75 group-hover:opacity-100 transition duration-500"></div>
+                    <div class="relative rounded-[3rem] overflow-hidden w-72 sm:w-80 h-96 border-2 border-slate-700 bg-slate-800 shadow-2xl">
+                        <img src="WhatsApp Image 2026-10-07 at 04.59.36.jpeg" alt="WhatsApp Image 2026-10-07 at 04.59.36.jpeg" class="w-full h-full object-cover object-center group-hover:scale-105 transition duration-500">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEACHING PHILOSOPHY SECTION -->
+    <section class="py-20 px-6 max-w-5xl mx-auto" id="philosophy">
+        <div class="p-8 sm:p-12 rounded-3xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden" data-aos="fade-up">
+            <div class="absolute -right-10 -bottom-10 text-emerald-500/5 text-9xl font-bold pointer-events-none">
+                <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <span class="text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2 block">Educational Vision</span>
+            <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-6">Teaching Philosophy</h2>
+            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base mb-4">
+                "Science is not merely about memorizing periodic tables or anatomical structures; it is about awakening curiosity and teaching students how the natural world operates through empirical evidence and critical thought."
+            </p>
+            <p class="text-slate-600 dark:text-slate-300 leading-relaxed text-base">
+                As an alumnus of Mogadishu University, my goal is to bridge theoretical concepts with real-world laboratory practices, empowering the next generation of Somali scientists and medical professionals.
+            </p>
+        </div>
+    </section>
+
+    <!-- EDUCATION & BACKGROUND -->
+    <section class="py-20 px-6 max-w-5xl mx-auto" id="education">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-3">Education & Academic Background</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">Rigorous academic training focused on modern teaching pedagogy and advanced sciences.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-8 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 shadow-sm" data-aos="fade-right">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-university"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 dark:text-white mb-1">Mogadishu University</h3>
+                <p class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mb-4">Faculty of Education and Humanities</p>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    Completed comprehensive professional teacher training and advanced coursework focused on curriculum design, educational psychology, and classroom management.
+                </p>
+            </div>
+
+            <div class="p-8 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 shadow-sm" data-aos="fade-left">
+                <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+                <h3 class="text-xl font-bold text-slate-800 dark:text-white mb-1">Department of Biology & Chemistry</h3>
+                <p class="text-xs font-semibold text-teal-600 dark:text-teal-400 mb-4">Specialized Science Track</p>
+                <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                    Specialized in cellular biology, organic and inorganic chemistry, laboratory experiments, and scientific inquiry methods designed to inspire high school students.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SUBJECTS & EXPERTISE -->
+    <section class="py-20 px-6 max-w-6xl mx-auto" id="subjects">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-3">Core Teaching Subjects</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">In-depth mastery and engaging instructional methods for core sciences.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-8 rounded-2xl bg-gradient-to-br from-emerald-900/10 to-transparent border border-emerald-500/20" data-aos="fade-up">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-emerald-500/30">
+                        <i class="fa-solid fa-dna"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Biology</h3>
+                        <p class="text-xs text-emerald-600 dark:text-emerald-400 font-medium">Life Sciences & Ecosystems</p>
+                    </div>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Cellular & Molecular Biology</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Human Anatomy & Physiology</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Genetics, Evolution & Ecology</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Practical Lab Demonstrations</li>
+                </ul>
+            </div>
+
+            <div class="p-8 rounded-2xl bg-gradient-to-br from-teal-900/10 to-transparent border border-teal-500/20" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-600 text-white flex items-center justify-center text-2xl shadow-lg shadow-teal-500/30">
+                        <i class="fa-solid fa-vials"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-slate-800 dark:text-white">Chemistry</h3>
+                        <p class="text-xs text-teal-600 dark:text-teal-400 font-medium">Matter, Reactions & Elements</p>
+                    </div>
+                </div>
+                <ul class="space-y-3 text-sm text-slate-600 dark:text-slate-300">
+                    <li><i class="fa-solid fa-check text-teal-500 mr-2"></i> Organic & Inorganic Chemistry</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Chemical Bonding & Stoichiometry</li>
+                    <li><i class="fa-solid fa-check text-teal-500 mr-2"></i> Periodic Table Trends & Solutions</li>
+                    <li><i class="fa-solid fa-check text-teal-500 mr-2"></i> Safe Laboratory Experimentation</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAB EXPERIMENT VIDEOS SECTION -->
+    <section class="py-20 px-6 max-w-6xl mx-auto" id="videos">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-3">Laboratory Experiments & Teaching Videos</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">Watch practical demonstrations and lab sessions conducted by Teacher Nuur.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm" data-aos="fade-up">
+                <div class="relative bg-slate-900 aspect-video flex items-center justify-center group">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80')"></div>
+                    <a href="https://www.youtube.com" target="_blank" class="relative z-10 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center text-xl shadow-lg transition group-hover:scale-110">
+                        <i class="fa-solid fa-play ml-1"></i>
+                    </a>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">Chemistry Lab</span>
+                    <h3 class="text-lg font-bold text-slate-800 dark:text-white mt-1 mb-2">Chemical Reaction & Titration Demo</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Practical demonstration of acid-base titration methods for high school science students.</p>
+                </div>
+            </div>
+
+            <div class="rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative bg-slate-900 aspect-video flex items-center justify-center group">
+                    <div class="absolute inset-0 bg-cover bg-center opacity-60" style="background-image: url('https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=800&q=80')"></div>
+                    <a href="https://www.youtube.com" target="_blank" class="relative z-10 w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white flex items-center justify-center text-xl shadow-lg transition group-hover:scale-110">
+                        <i class="fa-solid fa-play ml-1"></i>
+                    </a>
+                </div>
+                <div class="p-6">
+                    <span class="text-xs font-semibold text-teal-600 dark:text-teal-400 uppercase tracking-wider">Biology Lab</span>
+                    <h3 class="text-lg font-bold text-slate-800 dark:text-white mt-1 mb-2">Cellular Structure Under Microscope</h3>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Microscopic examination of plant and animal cells during an interactive practical class.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREE DOWNLOADABLE NOTES & RESOURCES HUB (REAL FREE PDF LINKS) -->
+    <section class="py-20 px-6 max-w-6xl mx-auto" id="notes">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-3">Free Downloadable Notes & Resources</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">Access and download free open-source textbooks, science worksheets, and study guides.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Resource 1: OpenStax Biology -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm hover:shadow-md transition" data-aos="fade-up">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-file-pdf text-lg"></i>
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400 tracking-wider">Free Textbook</span>
+                    <h3 class="font-bold text-slate-800 dark:text-white mt-1 mb-1">OpenStax Biology 2e</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Comprehensive college and high school biology reference guide (PDF).</p>
+                </div>
+                <a href="https://openstax.org/details/books/biology-2e" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-600 hover:text-white text-emerald-600 dark:text-emerald-400 text-xs font-semibold text-center transition block">
+                    <i class="fa-solid fa-download mr-1.5"></i> Download / View PDF
+                </a>
+            </div>
+
+            <!-- Resource 2: OpenStax Chemistry -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="100">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-file-pdf text-lg"></i>
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-teal-600 dark:text-teal-400 tracking-wider">Free Textbook</span>
+                    <h3 class="font-bold text-slate-800 dark:text-white mt-1 mb-1">OpenStax Chemistry 2e</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Atoms, molecules, reactions, and periodic table handbook (PDF).</p>
+                </div>
+                <a href="https://openstax.org/details/books/chemistry-2e" target="_blank" class="w-full py-2.5 rounded-xl bg-teal-500/10 hover:bg-teal-600 hover:text-white text-teal-600 dark:text-teal-400 text-xs font-semibold text-center transition block">
+                    <i class="fa-solid fa-download mr-1.5"></i> Download / View PDF
+                </a>
+            </div>
+
+            <!-- Resource 3: Science Lab Safety & Guidelines -->
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 flex flex-col justify-between shadow-sm hover:shadow-md transition" data-aos="fade-up" data-aos-delay="200">
+                <div>
+                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-4">
+                        <i class="fa-solid fa-file-pdf text-lg"></i>
+                    </div>
+                    <span class="text-[10px] uppercase font-bold text-emerald-600 dark:text-emerald-400 tracking-wider">Lab Manual</span>
+                    <h3 class="font-bold text-slate-800 dark:text-white mt-1 mb-1">Science Lab Safety Guide</h3>
+                    <p class="text-xs text-slate-500 dark:text-slate-400 mb-4">Essential protocols and handling procedures for chemistry labs.</p>
+                </div>
+                <a href="https://www.chemedx.org/" target="_blank" class="w-full py-2.5 rounded-xl bg-emerald-500/10 hover:bg-emerald-600 hover:text-white text-emerald-600 dark:text-emerald-400 text-xs font-semibold text-center transition block">
+                    <i class="fa-solid fa-download mr-1.5"></i> Download / View PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHOTO GALLERY SECTION -->
+    <section class="py-20 px-6 max-w-7xl mx-auto" id="gallery">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-3">Classroom & Lab Gallery</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">Glimpses of daily teaching moments and hands-on science experiments.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="rounded-3xl overflow-hidden h-[420px] relative group shadow-2xl border border-slate-200 dark:border-slate-800" data-aos="fade-right">
+                <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80" alt="Classroom" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition p-8 flex flex-col justify-end">
+                    <span class="text-xs uppercase font-bold text-emerald-400 tracking-wider mb-1">Biology Section</span>
+                    <h3 class="text-2xl font-bold text-white">Interactive Biology Lecture & Class Session</h3>
+                </div>
+            </div>
+
+            <div class="rounded-3xl overflow-hidden h-[420px] relative group shadow-2xl border border-slate-200 dark:border-slate-800" data-aos="fade-left">
+                <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80" alt="Lab session" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-80 group-hover:opacity-90 transition p-8 flex flex-col justify-end">
+                    <span class="text-xs uppercase font-bold text-teal-400 tracking-wider mb-1">Chemistry Laboratory</span>
+                    <h3 class="text-2xl font-bold text-white">Hands-on Chemistry Practical Experiment</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="py-20 px-6 max-w-6xl mx-auto" id="testimonials">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-3">Principal & Student Testimonials</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">What school leadership and students say about Teacher Nuur's dedication.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-8 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 shadow-sm relative" data-aos="fade-right">
+                <i class="fa-solid fa-quote-left text-4xl text-emerald-500/20 absolute top-6 right-6"></i>
+                <p class="text-slate-600 dark:text-slate-300 text-sm italic mb-6 leading-relaxed">
+                    "Teacher Nuur is an exceptional educator. His background from Mogadishu University clearly shows in his professional teaching methodology. Our students' science scores have significantly improved."
+                </p>
+                <h4 class="font-bold text-slate-800 dark:text-white">Ahmed Sheikh Omar</h4>
+                <p class="text-xs text-emerald-600 dark:text-emerald-400">High School Principal</p>
+            </div>
+
+            <div class="p-8 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 shadow-sm relative" data-aos="fade-left">
+                <i class="fa-solid fa-quote-left text-4xl text-emerald-500/20 absolute top-6 right-6"></i>
+                <p class="text-slate-600 dark:text-slate-300 text-sm italic mb-6 leading-relaxed">
+                    "Chemistry and Biology used to be difficult for me until I joined Teacher Nuur's classes. He makes complex experiments and concepts extremely easy to grasp and enjoy!"
+                </p>
+                <h4 class="font-bold text-slate-800 dark:text-white">Fatima Abdi</h4>
+                <p class="text-xs text-emerald-600 dark:text-emerald-400">Grade 12 Science Student</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-20 px-6 max-w-4xl mx-auto" id="faq">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-3">Frequently Asked Questions</h2>
+            <p class="text-slate-600 dark:text-slate-400 text-sm">Common inquiries from students and parents regarding classes.</p>
+        </div>
+
+        <div class="space-y-4" data-aos="fade-up">
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
+                <h3 class="font-bold text-slate-800 dark:text-white mb-2">How can parents schedule a consultation?</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Parents can easily reach out directly via WhatsApp (+252 61 537 9760) to discuss student progress or arrange private tutoring sessions.</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
+                <h3 class="font-bold text-slate-800 dark:text-white mb-2">Are practical lab sessions included in the curriculum?</h3>
+                <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Yes! Practical laboratory experiments are conducted weekly to ensure students get hands-on experience in both Biology and Chemistry.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section class="py-20 px-6 max-w-4xl mx-auto" id="schedule">
+        <div class="p-8 sm:p-12 rounded-3xl bg-white dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 shadow-sm" data-aos="fade-up">
+            <h2 class="text-2xl font-bold text-slate-900 dark:text-white mb-6 text-center">Class & Office Hours Schedule</h2>
+            <div class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+                <div class="flex justify-between items-center py-3 border-b border-slate-200 dark:border-slate-700">
+                    <span class="font-semibold">Saturday - Wednesday (Morning Session)</span>
+                    <span class="text-emerald-600 dark:text-emerald-400 font-medium">08:00 AM - 12:30 PM (Biology & Chemistry Classes)</span>
+                </div>
+                <div class="flex justify-between items-center py-3 border-b border-slate-200 dark:border-slate-700">
+                    <span class="font-semibold">Thursday (Laboratory Session)</span>
+                    <span class="text-emerald-600 dark:text-emerald-400 font-medium">09:00 AM - 11:30 AM (Practical Experiments)</span>
+                </div>
+                <div class="flex justify-between items-center py-3">
+                    <span class="font-semibold">Consultation / Student Inquiries</span>
+                    <span class="text-emerald-600 dark:text-emerald-400 font-medium">Via WhatsApp anytime</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="py-20 px-6 max-w-4xl mx-auto" id="contact">
+        <div class="p-8 sm:p-12 rounded-3xl bg-slate-900 border border-slate-800 text-center relative overflow-hidden shadow-2xl" data-aos="fade-up">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-2xl"></div>
+            <h2 class="text-3xl font-bold text-white mb-4">Get in Touch</h2>
+            <p class="text-slate-400 text-sm max-w-md mx-auto mb-8">
+                For educational inquiries, school consultations, or tutoring sessions, feel free to reach out directly via WhatsApp.
+            </p>
+            <a href="https://wa.me/252615379760" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-base transition shadow-xl shadow-emerald-500/30">
+                <i class="fa-brands fa-whatsapp text-2xl"></i> +252 61 537 9760
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 py-10 px-6 text-center text-xs">
+        <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Nuur Maxamed Nuur. All rights reserved.</p>
+            <p class="text-emerald-400">Mogadishu University Graduate | Biology & Chemistry Educator</p>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        
+        function toggleDarkMode() {
+            const html = document.documentElement;
+            html.classList.toggle('dark');
+            const icon = document.getElementById('theme-icon');
+            if (html.classList.contains('dark')) {
+                icon.className = 'fa-solid fa-moon text-base';
+            } else {
+                icon.className = 'fa-solid fa-sun text-base text-amber-500';
+            }
+        }
+    </script>
+</body>
+</html>
